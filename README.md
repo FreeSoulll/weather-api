@@ -17,7 +17,6 @@
 ### 1. Клонируем репозиторий:
 ```sh
 git clone git@github.com:FreeSoulll/weather-api.git
-cd weather_api
 ```
 
 ### 2. Переходим в папку с приложением:
