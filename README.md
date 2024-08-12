@@ -1,24 +1,50 @@
-# README
+# Тестовое задание: API для статистики по погоде
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Источник данных
+[AccuWeather API](https://developer.accuweather.com/apis)
 
-Things you may want to cover:
+### Необходимые эндпоинты:
+- `/weather/current` - Текущая температура
+- `/weather/historical` - Почасовая температура за последние 24 часа
+- `/weather/historical/max` - Максимальная температура за 24 часа
+- `/weather/historical/min` - Минимальная температура за 24 часа
+- `/weather/historical/avg` - Средняя температура за 24 часа
+- `/weather/by_time` - Найти температуру, ближайшую к переданному timestamp (например, `1621823790` должен отдать температуру за `2021-05-24 08:00`. Из имеющихся данных, если такого времени нет, вернуть `404`)
+- `/health` - Статус бекенда (можно всегда отвечать OK)
 
-* Ruby version
+## Руководство запуска приложения:
 
-* System dependencies
+### 1. Клонируем репозиторий:
+```sh
+git clone git@github.com:FreeSoulll/weather-api.git
+cd weather_api
+```
 
-* Configuration
+### 2. Переходим в папку с приложением:
+```sh
+cd weather-api
+```
 
-* Database creation
+### 3. Установка зависимостей:
+```sh
+bundle install
+```
 
-* Database initialization
+### 4. Запуск миграции:
+```sh
+bundle exec rails db:create
+bundle exec rails db:migrate
+```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### 5. Создание файла .env:
+```sh
+sudo nano .env
+```
 
-* Deployment instructions
+В файле создаем `API_KEY` и `LOCATION_KEY`, куда помещаем локацию и апи ключ
 
-* ...
+### 5. Запуск приложения:
+```sh
+rails s
+```
