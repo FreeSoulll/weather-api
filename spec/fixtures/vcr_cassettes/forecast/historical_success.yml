@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dataservice.accuweather.com/currentconditions/v1/<LOCATION_KEY>/historical/24?apikey=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 12 Aug 2024 06:07:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '11673'
+      Connection:
+      - keep-alive
+      Request-Context:
+      - appId=cid-v1:0158d69b-75d9-4a19-9e5f-a14693f847e4
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '39'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=211
+      Expires:
+      - Mon, 12 Aug 2024 06:10:52 GMT
+      Akamai-Grn:
+      - 0.26962e17.1723442841.11d297ff
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Faraday v1.10.3
+      X-Forwarded-For:
+      - 31.131.194.230
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2024-08-12T07:58:00+03:00","EpochTime":1723438680,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":13.5,"Unit":"C","UnitType":17},"Imperial":{"Value":56.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-12T06:58:00+03:00","EpochTime":1723435080,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":12.6,"Unit":"C","UnitType":17},"Imperial":{"Value":55.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-12T05:57:00+03:00","EpochTime":1723431420,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":11.9,"Unit":"C","UnitType":17},"Imperial":{"Value":54.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-12T05:02:00+03:00","EpochTime":1723428120,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":11.9,"Unit":"C","UnitType":17},"Imperial":{"Value":54.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-12T03:57:00+03:00","EpochTime":1723424220,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":12.7,"Unit":"C","UnitType":17},"Imperial":{"Value":55.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-12T02:58:00+03:00","EpochTime":1723420680,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":13.0,"Unit":"C","UnitType":17},"Imperial":{"Value":55.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-12T01:58:00+03:00","EpochTime":1723417080,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":12.6,"Unit":"C","UnitType":17},"Imperial":{"Value":55.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-12T00:57:00+03:00","EpochTime":1723413420,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":12.7,"Unit":"C","UnitType":17},"Imperial":{"Value":55.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T23:58:00+03:00","EpochTime":1723409880,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":13.2,"Unit":"C","UnitType":17},"Imperial":{"Value":56.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T23:04:00+03:00","EpochTime":1723406640,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":13.2,"Unit":"C","UnitType":17},"Imperial":{"Value":56.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T21:58:00+03:00","EpochTime":1723402680,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":14.7,"Unit":"C","UnitType":17},"Imperial":{"Value":58.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T20:57:00+03:00","EpochTime":1723399020,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":15.8,"Unit":"C","UnitType":17},"Imperial":{"Value":60.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T19:58:00+03:00","EpochTime":1723395480,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":17.1,"Unit":"C","UnitType":17},"Imperial":{"Value":63.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T18:58:00+03:00","EpochTime":1723391880,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":17.6,"Unit":"C","UnitType":17},"Imperial":{"Value":64.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T17:58:00+03:00","EpochTime":1723388280,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":18.0,"Unit":"C","UnitType":17},"Imperial":{"Value":64.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T17:02:00+03:00","EpochTime":1723384920,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":18.0,"Unit":"C","UnitType":17},"Imperial":{"Value":64.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T16:02:00+03:00","EpochTime":1723381320,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":17.8,"Unit":"C","UnitType":17},"Imperial":{"Value":64.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T15:02:00+03:00","EpochTime":1723377720,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":19.3,"Unit":"C","UnitType":17},"Imperial":{"Value":67.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T13:57:00+03:00","EpochTime":1723373820,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":18.8,"Unit":"C","UnitType":17},"Imperial":{"Value":66.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T12:57:00+03:00","EpochTime":1723370220,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":18.0,"Unit":"C","UnitType":17},"Imperial":{"Value":64.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T11:58:00+03:00","EpochTime":1723366680,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":17.1,"Unit":"C","UnitType":17},"Imperial":{"Value":63.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T11:02:00+03:00","EpochTime":1723363320,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":17.1,"Unit":"C","UnitType":17},"Imperial":{"Value":63.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T09:58:00+03:00","EpochTime":1723359480,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":18.3,"Unit":"C","UnitType":17},"Imperial":{"Value":65.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"},{"LocalObservationDateTime":"2024-08-11T08:57:00+03:00","EpochTime":1723355820,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":17.2,"Unit":"C","UnitType":17},"Imperial":{"Value":63.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us","Link":"http://www.accuweather.com/en/ru/dubna/<LOCATION_KEY>/current-weather/<LOCATION_KEY>?lang=en-us"}]'
+  recorded_at: Mon, 12 Aug 2024 06:07:21 GMT
+recorded_with: VCR 6.2.0
